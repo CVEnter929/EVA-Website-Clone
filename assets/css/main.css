@@ -1,0 +1,604 @@
+*{
+  font-family: Arial;
+}
+
+/*This is used for the background image of the headerS*/
+#header_div{
+  height: 800px;
+  width: auto;
+  background-size: cover;
+  background-image: url(https://elitevirtualassist.com/wp-content/uploads/2018/10/eva_slider_optimized.jpg);
+  background-repeat: no-repeat;
+
+}
+
+header{
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 110px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+@@media only screen and (max-width: 800px){
+  header{
+    background-color: rgba(55, 255, 255, 0.5);
+    height: 110px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#nav_smallscreen{
+  display: none;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 25px;
+}
+
+#nav_bigscreen{
+  display: inline-block;
+}
+
+
+#logo{
+  margin-left: 4%;
+  padding-top: 20px;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-left: 300px;
+  padding-top: 20px;
+}
+
+nav ul li{
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+#nav_smallscreen nav ul{
+  display: flex;
+  flex-direction: row;
+  float: left;
+  padding-left: 0px;
+  padding-top: 20px;
+}
+
+.dropbtn{
+  background-color: #eeeeee;
+  border: 2px solid #45c0ae;
+  color: #111111;
+  padding: 16px;
+  font-size: 20px;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  text-decoration: none;
+  color: #222222;
+  background-color: #45c0ae;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+  text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+  #nav_smallscreen{
+    display: none;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  #nav_bigscreen{
+    display: none;
+  }
+
+  #nav_smallscreen{
+    display: inline-block;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #5b6160;
+  font-size: 20pt;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #45c0ae;
+}
+
+.center_text{
+  font-size: 60pt;
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  color: #000000;
+}
+
+.center_text p, .center_text a{
+  padding-right: 10px;
+  display: flex;
+  align-self: center;
+}
+
+#schedule{
+  color: #ffffff;
+  background-color: #000000;
+  border: 5px solid #45c0ae;
+  width: 430px;
+  padding-left: 7px;
+  font-size: 40pt;
+  line-height: 50px;
+}
+
+/*This class refers to the grey textboxes throughout the website*/
+.grey_text{
+  height: 75px;
+  background-color: #5b6160;
+  color: #ffffff;
+  text-align: center;
+  font-size: 35pt;
+  clear: both;
+}
+
+#services_img{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+#packages_img{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+#why_img{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.par_class{
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .par_class{
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.below_header p{
+  padding-top: 10px;
+}
+
+.list{
+  list-style-image: url(../images/check.ico);
+  font-size: 15pt;
+  padding-left: 65px;
+  padding-top: 65px;
+  padding-bottom: 50px;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: row;
+  word-break: keep-all;
+}
+
+.list ul:nth-of-type(2){
+  padding-left: 390px;
+}
+
+.list ul li{
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px){
+  .list ul:nth-of-type(2){
+    padding-left: 100px;
+  }
+
+  .list{
+    list-style-image: url(../images/check.ico);
+    padding-left: 30px;
+    height: 500px;
+    width: 490px;
+    word-break: keep-all;
+  }
+}
+
+/*The icons may not display correctly when more or less than 8 or 4 are used*/
+#icon_group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 45px;
+}
+
+.icon_container{
+  width: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.icon{
+  border-radius: 100px;
+  border: 5px solid #45c0ae;
+}
+
+.icon_name{
+  font-size: 20pt;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.profile img{
+  margin-left: 20px;
+}
+
+.profile_info{
+  text-align: left;
+  padding-right: 10px;
+}
+
+.profile_info h3{
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  word-break: keep-all;
+  width: 1000px;
+}
+
+@media only screen and (max-width: 600px){
+  .profile_info h3{
+    padding-left: 50px;
+    word-break: keep-all;
+    width: 490px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .profile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile img{
+    margin-left: 0px;
+  }
+}
+
+/*Different css is used when the image is on the left and on the right*/
+.screen_split_left{
+  float: left;
+  clear: both;
+}
+
+.screen_split_right{
+float: right;
+clear: both;
+}
+
+/*The information next to the image*/
+/*the direction(left or right) refers to the image*/
+.information_left{
+  list-style-image: url(../images/check.ico);
+  font-size: 15pt;
+  padding-left: 45px;
+  padding-top: 5px;
+  padding-bottom: 50px;
+  margin-right: 20%;
+  float: right;
+  clear: right;
+}
+
+h3{
+  word-break: keep-all;
+  width: 400px;
+}
+
+/*Rearanges screen_split classes for smaller screens*/
+@media only screen and (max-width: 1450px) {
+  .information_left{
+    list-style-image: url(../images/check.ico);
+    font-size: 15pt;
+    padding-top: 65px;
+    margin-left: 5%;
+    float: left;
+    clear: left;
+  }
+
+  .information_right{
+    list-style-image: url(../images/check.ico);
+    font-size: 15pt;
+    padding-top: 65px;
+    margin-left: 5%;
+    float: left;
+    clear: left;
+  }
+
+  .screen_split_right{
+  float: left;
+  clear: left;
+  margin-left: 5%;
+  }
+
+  .screen_split_left{
+  float: left;
+  clear: left;
+  margin-left: 5%;
+  padding-top: 50px;
+  }
+}
+
+/*Resizes images for smaller screens*/
+@media only screen and (max-width : 800px) {
+  .image img{
+    opacity: 0.8;
+    width: 500px;
+  }
+
+  .text_w_image_background{
+    background-image: url(https://elitevirtualassist.com/wp-content/uploads/2018/10/eva_quote._optimizedjpg.jpg?id=6232);
+    width: 960x;
+    height: 540px;
+    background-size: contain;
+  }
+}
+
+.information_right{
+  list-style-image: url(../images/check.ico);
+  font-size: 15pt;
+  padding-left: 45px;
+  padding-top: 65px;
+  float: left;
+  clear: left;
+}
+
+.information_left h3, .information_right h3{
+  font-size: 25pt;
+}
+
+.image img{
+  opacity: 0.8;
+}
+
+.text_w_image_background{
+  background-image: url(https://elitevirtualassist.com/wp-content/uploads/2018/10/eva_quote._optimizedjpg.jpg?id=6232);
+  background-size: cover;
+  width: 1530px;
+  height: 610px;
+  text-align: center;
+}
+
+
+.text_for_bg_img{
+  font-size: 35pt;
+  padding-top: 100px;
+}
+
+.text_for_bg_img p{
+  color: #ffffff;
+}
+
+
+/*This class refers to buttons that link to another page*/
+/*It does not refer to the menu button*/
+.link_button{
+  background-color: #45c0ae;
+  width: 200px;
+  height: 50px;
+}
+
+.link_button a{
+  color: #111111;
+}
+
+.link_button a:hover{
+  color: #ffdddd;
+  text-decoration: none;
+}
+
+@media only screen and (max-width : 600px) {
+  .text_w_image_background{
+    background-size: contain;
+    background-position: -270px;
+    width: 500x;
+    height: 640px;
+    text-align: left;
+  }
+
+  .text_for_bg_img{
+    font-size: 35pt;
+    padding-top: 50px;
+    padding-left: 80px;
+    width: 450px;
+    word-break: keep-all;
+    text-align: center;
+  }
+}
+
+h2{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #ffffff;
+}
+
+  input{
+    width: 300px;
+    height: 45px;
+    margin-top: 25px;
+  }
+
+.description_box{
+  height: 75px;
+  width: 1000px;
+  margin-top: 40px;
+}
+
+.sign_up_form{
+  background-color: #222222;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.form_inputs{
+  display: flex;
+  justify-content: space-around;
+}
+
+.form_inputs input{
+  width: 300px;
+}
+
+.form_center_items{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.submit_btn{
+  background-color: #45c0ae;
+  border-color: #45c0ae;
+  color: #ffffff;
+  font-size: 20pt;
+}
+
+#contact_info{
+  text-align: center;
+}
+
+#contact_info_p{
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+  word-break: keep-all;
+  font-size: 14pt;
+}
+
+@media only screen and (max-width: 800px){
+    #contact_info_p{
+      text-align: center;
+      padding-left: 0px;
+      padding-right: 0px;
+      word-break: keep-all;
+      font-size: 14pt;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+  .form_inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  textarea{
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #contact_photo{
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contact_photo{
+    width: 500px;
+  }
+}
+
+.page_reset_div{
+  background-color: #222222;
+}
+
+.page_reset_button{
+  border: 5px solid #555555;
+  background-color: #45c0ae;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.page_reset_button a:hover{
+  color: #444444;
+  text-decoration: none;
+}
+
+.side_text{
+  width: 700px;
+  margin-left: -40px;
+}
+
+@media only screen and (max-width: 600px){
+  .side_text{
+    width: 420px;
+  }
+}
+
+footer{
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  clear: both;
+}
+
+footer img{
+  margin-top: 100px;
+  height: 120px;
+  width: 170px;
+}
+
+footer p{
+  margin-top: 50px;
+  color: #bbbbbb;
+  font-size: 10pt;
+}
